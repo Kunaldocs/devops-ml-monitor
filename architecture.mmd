@@ -1,0 +1,10 @@
+flowchart TD
+    A[Jira: backlog and sprint planning] --> B[GitHub: commits, branches, pull requests]
+    B --> C[GitHub Actions CI/CD]
+    C --> D[Unit tests]
+    D --> E[Docker image build]
+    E --> F[Docker Compose integration smoke test]
+    F --> G[Prediction API]
+    G --> H[MLflow: experiments and model registry]
+    G --> I[Prometheus: scrape /metrics]
+    I --> J[Grafana dashboard]
